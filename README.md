@@ -3,7 +3,7 @@
 ## Assignment 11.1
 # Link to the Jupityr Notebook: 
 https://github.com/kneetu/AI-ML/blob/main/assignment_11_1/what-drives-car-price.ipynb
-# Summary of findings for Assignment 5_1:
+# Summary of findings for Assignment 11_1:
 **Objective**: understand what factors make a car more or less expensive. As a result of your analysis, provide clear recommendations to your client -- a used car dealership -- as to what consumers value in a used car.
 **DataSet** : The data set consist of the 426K cars data, where price is used as the y_test parameter
 **Data cleanup**: For the simplicity of the modeling and to focus on the process, all the NaNs were removed from the dataset, making the dataset even smaller ~35K
