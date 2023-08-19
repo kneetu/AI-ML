@@ -16,7 +16,7 @@ https://github.com/kneetu/AI-ML/blob/main/assignment_17_1/practical_17_1.ipynb
 **DataSet** : The data is related with direct marketing campaigns of a Portuguese banking institution. For this excercise we picked bank-additional-full.csv with all examples (41188) and 20 inputs, ordered by date (from May 2008 to November 2010)
 RangeIndex: 41188 entries, 0 to 41187
 Data columns (total 21 columns):
- #   Column          Non-Null Count  Dtype  
+ ID   Column          Non-Null Count  Dtype  
 ---  ------          --------------  -----  
  0   age             41188 non-null  int64  
  1   job             41188 non-null  object 
