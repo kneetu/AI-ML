@@ -1,6 +1,12 @@
 ### AI-ML
 #######################################################################################
 
+## Capstone Project
+Please see https://github.com/kneetu/AI-ML/blob/main/capstone/README.md for detailed Readme
+
+
+#######################################################################################
+
 ## Assignment 17.1
 # Link to the Jupityr Notebook:
 https://github.com/kneetu/AI-ML/blob/main/assignment_17_1/practical_17_1.ipynb
