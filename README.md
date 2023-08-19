@@ -1,16 +1,17 @@
-### AI-ML
+# AI-ML
 #######################################################################################
 
 ## Capstone Project
+### Link to the README
 Please see https://github.com/kneetu/AI-ML/blob/main/capstone/README.md for detailed Readme
 
 
 #######################################################################################
 
 ## Assignment 17.1
-# Link to the Jupityr Notebook:
+### Link to the Jupityr Notebook:
 https://github.com/kneetu/AI-ML/blob/main/assignment_17_1/practical_17_1.ipynb
-# Summary of findings for Assignment 11_1:
+### Summary of findings for Assignment 11_1:
 **Objective**: The classification goal is to predict if the client will subscribe a term deposit. The goal of the exercise to compare the classification models in terms of their performance and accuracy 
 **DataSet** : The data is related with direct marketing campaigns of a Portuguese banking institution. For this excercise we picked bank-additional-full.csv with all examples (41188) and 20 inputs, ordered by date (from May 2008 to November 2010)
 RangeIndex: 41188 entries, 0 to 41187
@@ -51,7 +52,7 @@ Manual Feature cleanup: Based on teh correlation values, some of the features we
 - Apply the models on selected feature sets
 - Compare the performance 
 
-## Verdict
+### Verdict
 - As per the model comparision, it turns out to be that SVC is the slowest model. All of the models showed very high scores for both test and train data, indicating there overfitting was minimal.
 model	train score	test score	average fit time
 0	KNeighborsClassifier()	0.890488	0.882593	0.018238
@@ -81,9 +82,9 @@ Need to go into deeper analysis for more features and understand how to get high
 
 #######################################################################################
 ## Assignment 11.1
-# Link to the Jupityr Notebook: 
+### Link to the Jupityr Notebook: 
 https://github.com/kneetu/AI-ML/blob/main/assignment_11_1/what-drives-car-price.ipynb
-# Summary of findings for Assignment 11_1:
+### Summary of findings for Assignment 11_1:
 **Objective**: understand what factors make a car more or less expensive. As a result of your analysis, provide clear recommendations to your client -- a used car dealership -- as to what consumers value in a used car.
 **DataSet** : The data set consist of the 426K cars data, where price is used as the y_test parameter
 **Data cleanup**: For the simplicity of the modeling and to focus on the process, all the NaNs were removed from the dataset, making the dataset even smaller ~35K
@@ -92,7 +93,7 @@ https://github.com/kneetu/AI-ML/blob/main/assignment_11_1/what-drives-car-price.
 - Find best hyperparameters for Ridge model and compare it with other models
 - feature selection to provide recommendation
 - Analyze and provide recommendations
-## Recommendation to the client
+### Recommendation to the client
 - The factors that affect the price of the cars are :
   'year': The newer the car, higher the price,
   'condition': a like_new car sell for higher price, but the correalation is weak here.
@@ -106,10 +107,10 @@ https://github.com/kneetu/AI-ML/blob/main/assignment_11_1/what-drives-car-price.
 
 ########################################################################################
 ## Assigment 5.1
-# Link to the Jupityr Notebook: 
+### Link to the Jupityr Notebook: 
 https://github.com/kneetu/AI-ML/blob/main/assignment_5_1/prompt.ipynb
 
-# Summary of findings for Assignment 5_1:
+### Summary of findings for Assignment 5_1:
 
 The analysis of this data was focused towards the effect of passangers, Temperature. Based on teh analysis, the driver with the kids as passanger will likely to go mostly a retaurant<20 or have a takeout.
 If the temperature is high, then it will be a sit down restaurant, like a cheap restaurant.
