@@ -50,6 +50,43 @@ Remove all columns from input data, that are usually not available for a new Job
 Due to teh first attempt exploring teh dataset, there are quite a lot of repetion of code. The data cleanup/Exploration and prep part should be cleaned up.
 
 #### Outline of project
+- [Predict Job failures in advance](#Predict-Job-failures-in-advance)
+  - [Data](#Data)
+  - [Citation:](#Citation:)
+- [Import Libraries](#Import-Libraries)
+- [Load Data](#Load-Data)
+    - [Data Exploration (low level DGCM Data)](#Data-Exploration-(low-level-DGCM-Data))
+      - [BiVariant Analysis](#BiVariant-Analysis)
+      - [Drop Columns with very high correlation](#Drop-Columns-with-very-high-correlation)
+      - [Univariant Analysis](#Univariant-Analysis)
+  - [Data Exploration (High level Schedular data)](#Data-Exploration-(High-level-Schedular-data))
+- [Merge the 2 DataFrames](#Merge-the-2-DataFrames)
+  - [id_job is the common field in both the databases, hence will be used for joining the DataFrames](#id_job-is-the-common-field-in-both-the-databases,-hence-will-be-used-for-joining-the-DataFrames)
+    - [Explore id_job column in both DFs](#Explore-id_job-column-in-both-DFs)
+  - [find and drop the duplicates](#find-and-drop-the-duplicates)
+- [Cleanup Data on merged_df](#Cleanup-Data-on-merged_df)
+    - [convert gres_alloc to int](#convert-gres_alloc-to-int)
+    - [Drop highly skewed column 'constraint'](#Drop-highly-skewed-column-'constraint')
+    - [Since Exit Code a target column, replace all of the code > 0 to 1, where 0 : Success and 1: Failure](#Since-Exit-Code-a-target-column,-replace-all-of-the-code->-0-to-1,-where-0-:-Success-and-1:-Failure)
+  - [Final Exploration of merged table: confirm the columns and if any further cleanup is required](#Final-Exploration-of-merged-table:-confirm-the-columns-and-if-any-further-cleanup-is-required)
+    - [Simplify job_type](#Simplify-job_type)
+    - [Handle NaNs and Duplicates](#Handle-NaNs-and-Duplicates)
+    - [Idnetify highly correlated features for target features and drop all others](#Idnetify-highly-correlated-features-for-target-features-and-drop-all-others)
+- [Final data prep for modeling](#Final-data-prep-for-modeling)
+  - [Scale the data](#Scale-the-data)
+  - [Prepare Categorical Data](#Prepare-Categorical-Data)
+- [Test Train Split](#Test-Train-Split)
+- [Modeling](#Modeling)
+  - [Find Significant Features using Logistic Regression](#Find-Significant-Features-using-Logistic-Regression)
+    - [Train Test split with 10 most importance features](#Train-Test-split-with-10-most-importance-features)
+  - [Apply Various models and compare the performances](#Apply-Various-models-and-compare-the-performances)
+    - [Create Dataframe to capture performances of various models](#Create-Dataframe-to-capture-performances-of-various-models)
+  - [Confusion Matrix Using decisionTreeClassifier](#Confusion-Matrix-Using-decisionTreeClassifier)
+    - [DecisionTree Model Predictions](#DecisionTree-Model-Predictions)
+  - [Get Decision Tree features](#Get-Decision-Tree-features)
+  - [Plot Decision Tree](#Plot-Decision-Tree)
+- [Conclusion](#Conclusion)
+
 
 #### 
 #### Citation:
