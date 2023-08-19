@@ -62,7 +62,7 @@ model	train score	test score	average fit time
 
 - Based on above data, DecisionTreeClassifier is the best model for this data.
 - According to the analysis the factors that affect the decision are:
-   #   Column             Non-Null Count  Dtype  
+ ID     Column             Non-Null Count  Dtype  
 ---  ------             --------------  -----  
  0   contact_telephone  39180 non-null  uint8  
  1   month_aug          39180 non-null  uint8  
