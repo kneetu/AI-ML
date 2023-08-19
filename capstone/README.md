@@ -5,8 +5,14 @@ Predict Job failures in Advance based on system Requirements and resource alloca
 Neetu Kulshrestha
 
 #### Jupyter notebook
-PredictJobFailureInSystem.ipynb
 
+https://github.com/kneetu/AI-ML/blob/main/capstone/PredictJobFailureInSystem.ipynb
+
+The **Data** directory contains 2 csv files that are used as input
+- dcgm.csv - Low Level data for jobs
+- scheduler_data.csv: High Level data set 
+The **resource** directory contains the details files for certain features:
+- JobStates.csv : Details of the job "states"
 
 #### Executive summary
 Many Jobs run in the system and some of them run for hours/days. It uses system resources unnecessarily and may bring system performance down. What if a model can predict if a certain job will fail when executed. 
