@@ -43,9 +43,11 @@ Upon further analysis, this make sense. The model and data prep missed one impor
 **Error In the Model**:  State is not available for any of the future jobs, so it should have been removed from the data set. Same applies to time_start, time_end etc. All these columns should be dropped before applying the models on it. 
 
 #### Next steps
+
 **Code cleanup**
-Due to teh first attempt exploring teh dataset, there are quite a lot of repetion of code. The data cleanup/Exploration and prep part should be cleaned up.
-**MOdel Improvement**
+Due to the first attempt exploring the dataset, there are quite a lot of repetion of code. The data cleanup/Exploration and prep part should be cleaned up.
+
+**Model Improvement**
 - adjust false-positives, false-negatives as per the problem
 - Add Random Forest and XGBoost to the list of models to compare performance and try again
 - Remove the first logistic regression, as this is causing rest of the models to work against a linearly biased model's results
