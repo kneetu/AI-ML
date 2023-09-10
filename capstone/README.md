@@ -52,12 +52,11 @@ The model provide very low number of false positives and false-negatives compare
 
 As per the model, best feature analysis, total_execution time is the feature with highest importance, with CPU_req and Memory_req following. This makes sense that if a job is running for prolonged period, it blocks the system resources for that long time, and hence may end up in failing state. 
 
-#### Next steps
-
 
 
 #### Outline of project
-(base) neetu@Neetus-MBP workspace % ./printMarkDown.py kraftwerk/capstone/predict_job_failure_in_system.ipynb
+ % ./printMarkDown.py kraftwerk/capstone/predict_job_failure_in_system.ipynb
+ 
 - [Predict Job failures in advance for system jobs](#Predict-Job-failures-in-advance-for-system-jobs)
   - [Data](#Data)
   - [Citation:](#Citation:)
@@ -121,6 +120,7 @@ S. Samsi et al., "The MIT Supercloud Dataset," 2021 IEEE High Performance Extrem
 #### References:
 https://learn.microsoft.com/en-us/dotnet/api/system.management.automation.jobstate?view=powershellsdk-7.3.0
 https://learn.microsoft.com/en-us/dotnet/api/microsoft.hpc.scheduler.properties.jobstate?view=hpc-sdk-5.1.6115
+https://machinelearningmastery.com/feature-importance-and-feature-selection-with-xgboost-in-python/
  
 
 
