@@ -95,7 +95,9 @@ Please note that the project takes an unusal decision on removing some features 
 **Final Data Set**: Final data set contains 57044 rows and 35 columns, where all columns are of numeric types. "exit_code" serves as the target feature and doesn't seem to be heavily skewed. 
 
 0    42276
+
 1    14768
+
 Name: exit_code, dtype: int64
 
 ### Methodology
